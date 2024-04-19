@@ -4,7 +4,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![recipe-page]()
+Desktop Screen
+![desktop-screen](./desktop-screen.png)
+
+Mobile Screen
+![mobile-screen](./mobile-screen.png)
 
 
 ### Links

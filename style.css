@@ -7,6 +7,7 @@
 html,
 body,
 div,
+header,
 h1,
 h2,
 h3,
@@ -18,7 +19,10 @@ p,
 a,
 ul,
 ol,
-img {
+img,
+tr,
+td,
+table {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -30,33 +34,121 @@ img {
   --primary-h: hsl(14, 45%, 36%);
 
   --neutral-white: hsl(0, 0%, 100%);
-  --neutral-200: hsl(330, 100%, 98%);
-  --neutral-300: hsl(30, 54%, 90%);
-  --neutral-400: hsl(30, 18%, 87%);
-  --neutral-700: hsl(30, 10%, 34%);
+  --neutral-800t: hsla(15, 4%, 18%, 0.184);
   --neutral-800: hsl(24, 5%, 18%);
 }
 /* Young Serif 400,
 Outfit 400, 600, 700*/
 
 body {
-    font-family: Outfit, sans-serif;
-    line-height: 1.5rem;
+  font-family: Outfit, sans-serif;
+  line-height: 1.5rem;
+  background-color: var(--neutral-white);
 }
 
 img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
-main {
-    margin: 32px;
-    display: grid;
+.content {
+  margin: 24px;
+  display: grid;
+  gap: 32px;
 }
 
-.intro h1 {
-    font-size: 2rem;
-    font-family: "Young Serif", serif;
-    font-weight: 600;
-    line-height: 2rem;
+h1 {
+  font-size: 2rem;
+  font-family: "Young Serif", serif;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 24px;
+}
+
+.prep {
+  background-color: hsla(332, 51%, 32%, 0.047);
+  border-radius: 16px;
+  padding-bottom: 16px;
+}
+
+h3 {
+  color: var(--primary-bg);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 16px 16px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-family: "Young Serif", serif;
+  color: var(--primary-h);
+  margin-bottom: 24px;
+}
+
+.prep ul {
+  margin-left: 44px;
+}
+
+.detail-h {
+  color: var(--neutral-800);
+  font-weight: 600;
+}
+
+li {
+  padding-left: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+li::marker {
+  color: var(--primary-bg);
+}
+
+.ingredients ul,
+.instructions ol {
+  margin-left: 24px;
+}
+
+.separator {
+  border-top: 0.2px solid var(--neutral-800t);
+}
+
+table {
+  border-spacing: 0;
+}
+
+td {
+  border-bottom: 0.2px solid var(--neutral-800t);
+  padding: 8px 0;
+}
+
+td.last {
+  border: none;
+  padding-bottom: 24px;
+}
+
+td:nth-child(2) {
+  color: var(--primary-h);
+  font-weight: bold;
+}
+
+td:nth-child(1) {
+  padding-left: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: hsla(332, 51%, 32%, 0.047);
+  }
+  main {
+    max-width: 600px;
+    background-color: var(--neutral-white);
+    margin: 60px auto;
+    border-radius: 16px;
+  }
+
+  img {
+    max-width: 552px;
+    margin: 24px;
+    border-radius: 16px;
+  }
 }
