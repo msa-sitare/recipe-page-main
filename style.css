@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p,
+a,
+ul,
+ol,
+img {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+:root {
+  --primary-bg: hsl(332, 51%, 32%);
+  --primary-h: hsl(14, 45%, 36%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-200: hsl(330, 100%, 98%);
+  --neutral-300: hsl(30, 54%, 90%);
+  --neutral-400: hsl(30, 18%, 87%);
+  --neutral-700: hsl(30, 10%, 34%);
+  --neutral-800: hsl(24, 5%, 18%);
+}
+/* Young Serif 400,
+Outfit 400, 600, 700*/
+
+body {
+    font-family: Outfit, sans-serif;
+    line-height: 1.5rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+main {
+    margin: 32px;
+    display: grid;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    line-height: 2rem;
+}
