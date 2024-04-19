@@ -9,9 +9,3 @@ Desktop Screen
 
 Mobile Screen
 ![mobile-screen](./mobile-screen.png)
-
-
-### Links
-
-- Solution URL: [Repository URL]()
-- Live Site URL: [Live Site URL]()
